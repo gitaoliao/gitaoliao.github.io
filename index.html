@@ -237,7 +237,7 @@
         <p>##布置一个自己的博客<br>想要布置自己的博客先按照网上的教程把相关环境搭建好，需要安装的如nodejs，git账号，等等弄好</p>
 <p>###第一步git部分<br>在自己的账号下建一个 账号名.github.io的仓库<br>在仓库的settings里面deploy key添加自己的公钥（获取公钥方法自行百度在.ssh目录下rsa_pub）<br>添加一个readme<br>完成。</p>
 <p>###第二步hexo部分<br>先在D:盘下创建一个文件夹，可以命名为blog<br>右键git bash 输入hexo init<br>此时文件夹下会多出许多文件来，<br>然后修改.config.xml文件，具体请参看网上教程，目的是为了连接到gitpages仓库<br>可以在source/_posts 里面的md文件用markdown语言修改为自己的博客<br>然后在blog右键git bash输入hexo g ，hexo s，hexo d<br>当输入hexo d 后可能会出现错误<br>输入命令npm install hexo-deployer-git –save<br>再次输入 hexo d<br>此时可以成功了。</p>
-<p>###再次写一篇博客<br>在blog目录下git bash 输入hexo new ”文件名“<br>会显示创建的文件所在目录<br>可以打开提示的文件所在目录打开文件使用markdown进行修改<br>修改之后回到blog文件夹右键git bash<br>输入git generate –将你写的markdown文件翻译成html文件<br>输入git s –可以在localhost：4000预览到效果<br>输入git d –将你写的文件更新到 账号名.github.io上<br>此时在浏览器输入 账号名.github.io 可以看到你部署的网站和更新的博客。</p>
+<p>###再次写一篇博客<br>在blog目录下git bash 输入hexo new ”文件名“<br>会显示创建的文件所在目录<br>可以打开提示的文件所在目录打开文件使用markdown进行修改<br>修改之后回到blog文件夹右键git bash<br>输入hexo generate –将你写的markdown文件翻译成html文件<br>输入hexo s –可以在localhost：4000预览到效果<br>输入hexo d –将你写的文件更新到 账号名.github.io上<br>此时在浏览器输入 账号名.github.io 可以看到你部署的网站和更新的博客。</p>
 
       
 
