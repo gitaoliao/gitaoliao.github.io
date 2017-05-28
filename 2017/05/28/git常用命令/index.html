@@ -8,16 +8,19 @@
   <link rel="dns-prefetch" href="http://gitaoliao.github.io">
   <title>git常用命令 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一步在github上建立一个仓库。 第二部首先找合适的地方创建一个文件夹例如ifeproject右键git bash git add .">
+  <meta name="description" content="第一步   新建仓库在github上建立一个仓库。 第二步   克隆到本地首先找合适的地方创建一个文件夹例如ifeproject右键git bash输入命令 git clone 地址会发现创建的仓库 已经克隆到了本地。有一个隐藏文件.git为版本控制文件，还有个readme文件。然后就可以自己在本地创建想要的文件夹和文件了。（需要注意的是空文件夹在github上并不显示，只有有了文件以后才会显示）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git常用命令">
 <meta property="og:url" content="http://gitaoliao.github.io/2017/05/28/git常用命令/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="第一步在github上建立一个仓库。 第二部首先找合适的地方创建一个文件夹例如ifeproject右键git bash git add .">
-<meta property="og:updated_time" content="2017-05-28T13:39:23.492Z">
+<meta property="og:description" content="第一步   新建仓库在github上建立一个仓库。 第二步   克隆到本地首先找合适的地方创建一个文件夹例如ifeproject右键git bash输入命令 git clone 地址会发现创建的仓库 已经克隆到了本地。有一个隐藏文件.git为版本控制文件，还有个readme文件。然后就可以自己在本地创建想要的文件夹和文件了。（需要注意的是空文件夹在github上并不显示，只有有了文件以后才会显示）">
+<meta property="og:image" content="https://raw.githubusercontent.com/gitaoliao/gitaoliao.github.io/master/img/TIM%E6%88%AA%E5%9B%BE20170528214901.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/gitaoliao/gitaoliao.github.io/master/img/TIM%E6%88%AA%E5%9B%BE20170528213702.png">
+<meta property="og:updated_time" content="2017-05-28T13:59:57.550Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git常用命令">
-<meta name="twitter:description" content="第一步在github上建立一个仓库。 第二部首先找合适的地方创建一个文件夹例如ifeproject右键git bash git add .">
+<meta name="twitter:description" content="第一步   新建仓库在github上建立一个仓库。 第二步   克隆到本地首先找合适的地方创建一个文件夹例如ifeproject右键git bash输入命令 git clone 地址会发现创建的仓库 已经克隆到了本地。有一个隐藏文件.git为版本控制文件，还有个readme文件。然后就可以自己在本地创建想要的文件夹和文件了。（需要注意的是空文件夹在github上并不显示，只有有了文件以后才会显示）">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/gitaoliao/gitaoliao.github.io/master/img/TIM%E6%88%AA%E5%9B%BE20170528214901.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -177,9 +180,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h1><p>在github上建立一个仓库。</p>
-<h1 id="第二部"><a href="#第二部" class="headerlink" title="第二部"></a>第二部</h1><p>首先找合适的地方创建一个文件夹例如ifeproject右键git bash</p>
-<p>git add .</p>
+        <h1 id="第一步-新建仓库"><a href="#第一步-新建仓库" class="headerlink" title="第一步   新建仓库"></a>第一步   新建仓库</h1><p>在github上建立一个仓库。</p>
+<h1 id="第二步-克隆到本地"><a href="#第二步-克隆到本地" class="headerlink" title="第二步   克隆到本地"></a>第二步   克隆到本地</h1><p>首先找合适的地方创建一个文件夹例如ifeproject右键git bash<br>输入命令 git clone 地址<br>会发现创建的仓库 已经克隆到了本地。<br>有一个隐藏文件.git为版本控制文件，还有个readme文件。<br><img src="https://raw.githubusercontent.com/gitaoliao/gitaoliao.github.io/master/img/TIM%E6%88%AA%E5%9B%BE20170528214901.png" alt="克隆截图1"><br>然后就可以自己在本地创建想要的文件夹和文件了。（需要注意的是空文件夹在github上并不显示，只有有了文件以后才会显示）<br><img src="https://raw.githubusercontent.com/gitaoliao/gitaoliao.github.io/master/img/TIM%E6%88%AA%E5%9B%BE20170528213702.png" alt="克隆截图2"></p>
+<h1 id="第三步-提交上去"><a href="#第三步-提交上去" class="headerlink" title="第三步  提交上去"></a>第三步  提交上去</h1><p>在新建项目比如task0001右键git bash<br>输入命令：git add .    –将所有文件添加上去<br>          git commit -m “版本信息”  –提交上去，版本信息里自己可以随便写<br>          git push origin master     –将项目push到github上</p>
+<p>完成啦!<br>（如果在git push的时候提示你权限不够，多半是公钥没配置对，在自己的ssh的rsa_pub 复制，一个公钥记录的是自己的本机设备可以访问github的权限，复制完了粘贴在自己账号配置的ssh key 部署上，而不是具体一个项目的ssh key部署上，整完了应该就行啦~！）</p>
+<p>一共只需要三步！和把大象装冰箱里一样的。</p>
 
       
 
